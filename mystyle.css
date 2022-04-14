@@ -1,0 +1,719 @@
+/* mobile first */
+@media all and (min-width: 300px) and (max-width: 719px) {
+	html, body {
+		margin:0px;
+		padding:0px;
+		height: 100%;
+		position: relative;
+	}
+
+	/* Page Wrapper */
+	#page-container {
+		position: relative;
+		display: inline-block;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+	}
+
+	/* Code to group divs that code other divs with clearfix */
+	.clearfix:before,
+	.clearfix:after {
+		content:"";
+		display: table;
+		clear: both;
+	}
+
+	/* Make media responsive to respective container */
+	img, video, canvas {
+		max-width: 100%;
+		height: auto;
+	}
+
+	/* Header for all pages */
+	.header-container {
+		width: 100%;
+		background-image: linear-gradient(to top, #0b3f22 0%, #000000 74%);
+		display: block; /* Changed the game for me. */
+		height: 10vh;
+		position: sticky;
+		z-index: 999;
+
+	}
+
+	.logo-container {
+		width: 15%;
+		height: 100%;
+		float: left;
+		background-color: none;
+	}
+
+	.logo-container > p {
+		color: white;
+	}
+
+	.title-container {
+		justify-content: center;
+		width: 70%;
+		height: 100%;
+		float: left;
+		background-color: none;
+	}
+
+	.title-container h1 {
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		font-size: 100%;
+		font-family: "Luminari", monospace;
+		color: white;
+		position: relative;
+		top: 20%;
+	}
+
+	.navbar-container {
+		height: 100%;
+		width: 11%;
+		padding: 0;
+		background-color: none;
+		background-image: linear-gradient(to top, #0b3f22 0%, #000000 74%);
+		color: white;
+		overflow: none;
+		float: right;
+
+	}
+
+	.navbar {
+		display: none;
+		position: absolute;
+		top: 12vh;
+		right: 1vw;
+		width: 50%;
+		background-image: linear-gradient(to top, #0b3f22 0%, #000000 74%);
+	}
+
+	/* Whenever someone hovers over the navbar container it will change to green */
+	.navbar-container:hover, .navbar-container:focus{
+		background: rgb(14, 84, 14);
+	}
+
+	/* Show the dropdown menu when the user clicks on the dropdown button */
+	.navbar-container:focus .navbar {
+		display: block;
+		z-index: 5;
+}
+
+	/* containers for each navbar header */
+	.navbar-column {
+		width: 100%;
+	}
+
+	/* each individual navbar link */
+	.navbar a {
+		font-size: 50px;
+		color: white;
+		border: 2px solid black;
+		z-index: 6;
+	}
+
+	/* Main content layout for index page */
+	.content-wrapper {
+		position: relative;
+		display: block;
+		background-color: black;
+		z-index: 1;
+		height:auto;
+		float: left;
+	} 
+
+
+	/* Video which is also its canvas */
+	.video-bg:before,
+	.video-bg:after{
+		display: table;
+		content: "";
+	}
+	.video-bg:after{
+		clear: both;
+	}
+
+	.video-bg {
+		position: relative;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		min-width: 100%;
+		min-height: 100%;
+		opacity: 30%;
+		float: left;
+		z-index: 1;
+	}
+
+	.box {
+		display: none;
+	}
+
+	.content-wrapper-2 {
+		position: relative;
+		display: block;
+		float: left;
+		background-color: rgba(91, 156, 91, 0.253);
+	}
+
+	/* Support page Mobile */
+	.support-wrapper {
+		height: 50vh;
+		width: 100%;
+		background-color: #000000;
+	}
+
+
+/* For More Posts Mobile Page */
+	.main-content::before,
+	.main-content::after {
+			content: "";
+			display: table;
+		}
+		
+	.main-content::after {
+			clear: both;
+		}
+		
+		.main-content {
+			*zoom: 1;
+		}
+
+	.main-content {
+		width: 63.197026%;
+		border: 1px solid black;
+		position: relative;
+		padding: 2%;
+		height: 100%;
+	}
+
+	.post-content:before,
+	.post-content:after {
+		content: "";
+		display: table;
+	}
+
+	.post-content:after{
+		clear: both;
+	}
+
+	.post-content {
+		height: 330vh;
+		width: 100%;
+		background-color: #000000;
+		background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+		position: absolute;
+	}
+
+	/* 320 * 380 and 32 as width */	
+
+	/*
+	.posts::before,
+	.posts::after {
+			content: "";
+			display: table;
+			clear: both;
+	}
+		
+
+	.posts {
+		*zoom: 1;
+	}
+
+	.posts {
+		border: 5px solid black;
+		Width: 35%;
+		padding: 1%;
+		background: white;
+		font-size: 75%;
+		float: left;
+		position: relative;
+		left: 11vw;
+		margin: 20px;
+		background-color: darkgrey;
+	}
+
+	.div-for-img {
+		position: relative;
+		height: 50%;
+		width: 100%;
+		border: 1px solid black;
+		clear: right;
+	}
+
+	.txt-for-img {
+		position: relative;
+		height: 20%;
+		width: 100%;
+		border: 1px solid black;
+		margin-top: 5%;
+		margin-right: 0;
+		display: inline-block;
+		white-space: nowrap;
+		overflow: hidden; 
+	}
+		
+	.post-button {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 5vh;
+		float: center;
+	}
+
+	.post-button button {
+		width: 100%;
+		height: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	} */
+}
+
+@media all and (min-width: 720px) and (max-width: 1023px) {
+	.box {
+		height: 200px;
+		width: 400px;
+		background-color: green;
+	}
+	.box > h1, h2 {
+		top: 0;
+		left: 90px;
+	}
+}
+
+@media all and (min-width: 1024px)	{
+	html, body {
+		margin:0px;
+		padding:0px;
+		height: 100%;
+		position: relative;
+	}
+
+	/* Page Wrapper */
+	#page-container {
+		position: absolute;
+		display: inline-block;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+	}
+
+	/* Code to group divs that code other divs with clearfix */
+	.clearfix:before,
+	.clearfix:after {
+		content:"";
+		display: table;
+		clear: both;
+	}
+
+	/* Make media responsive to respective container */
+	img, video, canvas {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.header-container {
+		width: 100%;
+		background-image: linear-gradient(to top, #0b3f22 0%, #000000 74%);
+		position: sticky;
+		top: 0;
+		border-bottom: 5px solid black;
+		z-index: 998;
+		height: 10vh;
+		overflow: hidden;
+		padding-bottom: 15px;
+	}
+
+	.logo-container {
+		width: 15%;
+		height: 50%;
+		float: left;
+	}
+
+	.title-container {
+		justify-content: center;
+		height: 50%;
+		width: 75%;
+		float: left;
+	}
+
+	.title-container h1 {
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		font-size: 2rem;
+		font-family: "Luminari", monospace;
+		color: white;
+	}
+
+	.navbar-container {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		text-align: center;
+		justify-content: center;
+		background: none;
+		font-size: 0;
+	}
+
+	.navbar {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	.navbar-column:before,
+	.navbar-column:after {
+		display: inline;
+		content:"";
+		clear: both;
+	}
+
+	/* containers for each navbar header */
+	.navbar-column {
+		display: inline-block;
+		height: 100%;
+		width: 20%;
+		justify-content: center;
+		margin-top: 1rem;
+	}
+
+	/* each individual navbar link */
+	.navbar a {
+		color: white;
+		text-align: center;
+		font-size: 1.4rem;
+		margin: auto;
+		padding: 1rem;
+		font-family: "Helvetica", Arial, Helvetica, sans-serif;
+		font-weight: none;
+	}
+
+	.content-wrapper:before,
+	.content-wrapper:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	/* Main content layout for page */
+	.content-wrapper {
+		position: relative;
+		background-color: black;	
+		height: 100%;
+	} 
+
+	/* Video which is also its canvas */
+	.video-bg {
+		position: relative;
+		top: -12vh;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		min-width: 100%;
+		min-height: 100%;
+		opacity: 30%;
+	}
+
+	.box {
+		height: 300px;
+		width: 500px;
+		border: 3px solid black;
+		position: absolute;
+		border: 5px solid black;
+		top: 24vh;
+		right: 33vw;
+		z-index: 1;
+	}
+
+	.box > h1, h2 {
+		color: white;
+		position: relative;
+		z-index: 1;
+		left: 15vh;
+		top: 10vh;
+	}
+
+	.content-wrapper-2 {
+		width: 100%;
+		height: 50vh;
+		background-color: white;
+		position: relative;
+		top: -22.5vh;
+	}
+
+	.content-wrapper-2 > h1 {
+		font-size: 3rem;
+		font-family: 'OCR A Std', monospace;
+		padding: 10px;
+	}
+
+	.content-wrapper-2 > p {
+		font-size: 2rem;
+		font-family: 'OCR A Std', monospace;
+		padding: 10px;
+	}
+
+	.content-wrapper-2 > img {
+		height: 20vh;
+		width: 20vw;
+		position: relative;
+		left: 37vw;
+	}
+
+	.main-content::before,
+	.main-content::after {
+			content: "";
+			display: table;
+		}
+		
+	.main-content::after {
+			clear: both;
+		}
+		
+		.main-content {
+			*zoom: 1;
+		}
+
+	.main-content {
+		width: 63.197026%;
+		border: 1px solid black;
+		position: relative;
+		padding: 2%;
+		height: 100%;
+	}
+
+	.post-content:before,
+	.post-content:after {
+		content: "";
+		display: table;
+	}
+
+	.post-content:after{
+		clear: both;
+	}
+
+	.post-content {
+		height: 330vh;
+		width: 100%;
+		background-color: #000000;
+		background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+		position: absolute;
+	}
+
+	/* 320 * 380 and 32 as width */	
+
+	.posts::before,
+	.posts::after {
+			content: "";
+			display: table;
+			clear: both;
+	}
+		
+
+	.posts {
+		*zoom: 1;
+	}
+
+	.posts {
+		border: 5px solid black;
+		Width: 35%;
+		padding: 1%;
+		background: white;
+		font-size: 75%;
+		float: left;
+		position: relative;
+		left: 11vw;
+		margin: 20px;
+		background-color: darkgrey;
+	}
+
+	.div-for-img {
+		position: relative;
+		height: 50%;
+		width: 100%;
+		border: 1px solid black;
+		clear: right;
+	}
+
+	.txt-for-img {
+		position: relative;
+		height: 20%;
+		width: 100%;
+		border: 1px solid black;
+		margin-top: 5%;
+		margin-right: 0;
+		display: inline-block;
+	/*	white-space: nowrap;
+		overflow: hidden; */
+	}
+		
+	.post-button {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 5vh;
+		float: center;
+	}
+
+	.post-button button {
+		width: 100%;
+		height: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+/* Support Page */
+	#wrapper {
+	height: 30vh;
+	width: 100%;
+	background-color: #000000;
+	}
+
+	form {
+	padding: 15px 25px;
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	}
+
+	form label {
+	font-size: 1.5rem;
+	font-weight: bold;
+	}
+
+	input {
+	font-family: "Lato";
+	}
+
+	#wrapper > a {
+	color: #0000ff;
+	text-decoration: none;
+	}
+
+	#wrapper > a:hover {
+	text-decoration: underline;
+	}
+
+	#wrapper,
+	#loginform {
+	margin: 0 auto;
+	padding-bottom: 25px;
+	background: #eee;
+	width: 600px;
+	max-width: 100%;
+	border: 2px solid #212121;
+	border-radius: 4px;
+	}
+
+	#loginform {
+	padding-top: 18px;
+	text-align: center;
+	}
+
+	#loginform p {
+	padding: 15px 25px;
+	font-size: 1.4rem;
+	font-weight: bold;
+	}
+
+	#chatbox {
+	text-align: left;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	padding: 10px;
+	background: #fff;
+	height: 300px;
+	width: 530px;
+	border: 1px solid #a7a7a7;
+	overflow: auto;
+	border-radius: 4px;
+	border-bottom: 4px solid #a7a7a7;
+	}
+
+	#usermsg {
+	flex: 1;
+	border-radius: 4px;
+	border: 1px solid #ff9800;
+	}
+
+	#name {
+	border-radius: 4px;
+	border: 1px solid #ff9800;
+	padding: 2px 8px;
+	}
+
+	#submitmsg,
+	#enter{
+	background: #ff9800;
+	border: 2px solid #e65100;
+	color: white;
+	padding: 4px 10px;
+	font-weight: bold;
+	border-radius: 4px;
+	}
+
+	.error {
+	color: #ff0000;
+	}
+
+	#menu {
+	padding: 15px 25px;
+	display: flex;
+	}
+
+	#menu p.welcome {
+	flex: 1;
+	}
+
+	a#exit {
+	color: white;
+	background: #c62828;
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-weight: bold;
+	}
+
+	.msgln {
+	margin: 0 0 5px 0;
+	}
+
+	.msgln span.left-info {
+	color: orangered;
+	}
+
+	.msgln span.chat-time {
+	color: #666;
+	font-size: 60%;
+	vertical-align: super;
+	}
+
+	.msgln b.user-name, .msgln b.user-name-left {
+	font-weight: bold;
+	background: #546e7a;
+	color: white;
+	padding: 2px 4px;
+	font-size: 90%;
+	border-radius: 4px;
+	margin: 0 5px 0 0;
+	}
+
+	.msgln b.user-name-left {
+	background: orangered;
+	}
+
+}
