@@ -10,16 +10,46 @@
     --whatsapp-dark: #075E54;
 }
 
-/* To style the layout of the modules on the page
-thereby creating a template */
-
-/* Structure */
+/* Page Structure */
 .page-container {
     height: 100vh;
     width: 100%;
 }
 
-/* Skin */
+/* Page Skin */
 .page-container {
     background-color: var(--wallpaper);
+}
+
+    /* Button Container */
+
+/* Structure */
+.btn-container {
+    height: 50vh;
+    width: 50%;
+    margin: 25vh 25vw;
+    position: absolute;
+}
+
+/* Skin */
+.btn-container {
+    background-color: var(--clickable);
+    border: .5rem solid black;
+    font-weight: bold;
+}
+
+    /* Screen Container */
+
+/* Structure */
+.screen-container {
+    height: 80vh;
+    width: 50%;
+    margin: 10vh 25vw;
+    position: absolute;
+}
+
+/* Skin */
+.screen-container {
+    background-color: var(--clickable);
+    border: .5rem solid black;
 }

@@ -1,43 +1,32 @@
 /* Modules aka actual objects built up of elements
 in the globals file */
 
-/* Structure for enter button */
+    /* Enter Button */
+
+/* Structure */
 .enter-btn {
-    height: 50vh;
-    width: 50%;
-    margin: 25vh 25vw;
     position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-/* Skin for enter button */
+/* Skin */
 .enter-btn {
-    background-color: var(--clickable);
-    border: .5rem solid black;
+    background: none;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 3rem;
+    color: blueviolet;
 }
 
-/* State for enter button */
+/* State */
 .enter-btn:hover {
     background-color: aliceblue;
     cursor: pointer;
 }
 
-/* chat-bot.html */
-
-/* Structure for screen container */
-.screen-container {
-    height: 80vh;
-    width: 50%;
-    margin: 10vh 25vw;
-    position: absolute;
-}
-
-/* Skin for Screen container */
-.screen-container {
-    background-color: var(--clickable);
-    border: .5rem solid black;
-}
+    /* Screen */
 
 /* Shared width between each screen component */
 .screen-header, .screen-body, .screen-bottom {
@@ -49,15 +38,55 @@ in the globals file */
     height: 10vh;
 }
 
-/* Structure for Screen header */
+    /* Screen header */
+
+/* Structure */
 .screen-header {
 
 }
 
-/* Skin for Screen header */
+/* Skin */
 .screen-header {
     background-color: var(--whatsapp-dark);
 }
+
+    /* Left of the screen header */
+
+/* Structure */
+.screen-header-left {
+
+}
+
+/* Skin */
+.screen-header-left {
+
+}
+
+    /* Center of the screen header*/
+
+/* Structure */
+.screen-header-middle {
+
+}
+
+/* Skin */
+.screen-header-middle {
+
+}
+
+    /* Right of the screen header */
+
+/* Structure */
+.screen-header-right {
+
+}
+
+/* Skin */
+.screen-header-right {
+
+}
+
+    /* Screen body */
 
 /* Structure for Screen body */
 .screen-body {
@@ -68,6 +97,8 @@ in the globals file */
 .screen-body {
     background-color: white;
 }
+
+    /* Screen body */
 
 /* Structure for Screen bottom */
 .screen-bottom {
