@@ -9,5 +9,5 @@ thereby creating a template */
 
 /* Skin */
 .btn-container {
-    background-color: aqua;
+    background-color: var(--wallpaper);
 }

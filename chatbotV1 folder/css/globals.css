@@ -4,3 +4,17 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --wallpaper: #3457D5;
+    --clickable: #A3C1AD;
+}
+
+/* Button link with full dynamic size of container */
+.btn-link {
+    position: absolute;
+    float: left;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

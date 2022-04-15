@@ -6,9 +6,33 @@ in the globals file */
     height: 50vh;
     width: 50%;
     margin: 25vh 25vw;
+    position: absolute;
 }
 
 /* Skin for enter button */
 .enter-btn {
+    background-color: var(--clickable);
+    border: .5rem solid black;
+    font-weight: bold;
+    font-size: 2rem;
+}
 
+/* State for enter button */
+.enter-btn:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+/* Structure for screen container */
+.screen-container {
+    height: 80vh;
+    width: 50%;
+    margin: 10vh 25vw;
+    position: absolute;
+}
+
+/* Skin for Screen container */
+.screen-container {
+    background-color: var(--clickable);
+    border: .5rem solid black;
 }
