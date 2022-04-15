@@ -1,0 +1,6 @@
+/* Global Code that will be reused in multiple components */
+
+* {
+    margin: 0;
+    padding: 0;
+}

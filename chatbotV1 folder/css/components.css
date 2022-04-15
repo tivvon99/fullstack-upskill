@@ -1,0 +1,14 @@
+/* Modules aka actual objects built up of elements
+in the globals file */
+
+/* Structure for enter button */
+.enter-btn {
+    height: 50vh;
+    width: 50%;
+    margin: 25vh 25vw;
+}
+
+/* Skin for enter button */
+.enter-btn {
+
+}
