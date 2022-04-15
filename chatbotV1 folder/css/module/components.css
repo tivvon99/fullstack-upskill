@@ -42,50 +42,66 @@ in the globals file */
 
 /* Structure */
 .screen-header {
-
+    display: flex;  /* Necessary */
+    text-align: center;
 }
 
 /* Skin */
 .screen-header {
     background-color: var(--whatsapp-dark);
+    color: var(--icon-color);
 }
 
     /* Left of the screen header */
 
+/* shared */
+.screen-header-left, .screen-header-middle, .screen-header-right {
+    height: 100%;
+}
+
 /* Structure */
 .screen-header-left {
-
+    width: 20%;
+    display: flex;
+    text-align: center;
+    padding: 2.5vh 0vh;
 }
 
 /* Skin */
 .screen-header-left {
-
+    color: white;
 }
 
     /* Center of the screen header*/
 
 /* Structure */
 .screen-header-middle {
-
+    width: 45%;
+    padding-top: 1.3vh;
 }
 
 /* Skin */
 .screen-header-middle {
-
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
     /* Right of the screen header */
 
 /* Structure */
 .screen-header-right {
-
+    width: 35%;
+    display: flex;
 }
 
 /* Skin */
 .screen-header-right {
-
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2.5vh 0vh;
 }
 
+    /* ------------------------------------------------------------- */
     /* Screen body */
 
 /* Structure for Screen body */
@@ -98,7 +114,8 @@ in the globals file */
     background-color: white;
 }
 
-    /* Screen body */
+    /* ------------------------------------------------------------- */
+    /* Screen bottom */
 
 /* Structure for Screen bottom */
 .screen-bottom {

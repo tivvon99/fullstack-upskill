@@ -10,43 +10,63 @@
 
     /* Screen header left */
 
-/* Structure for arrow image div */
+/* Structure for arrow icon */
 .arrow-left {
-
+    width: 30%;
+    height: 100%;
 }
 
-/* Skin for arrow image div */
+/* Skin for arrow image pic */
 .arrow-left {
-
+    font-size: 1rem;
+    color: white;
 }
 
 /* Structure for profile pic div */
-.profile-pic {
-
+.profile-pic {     
+    width: 70%;
+    height: 100%;
 }
 
 /* Skin for profile pic div */
 .profile-pic {
-    
+    font-size: 2.5rem;
 }
 
     /* Screen header middle */
 
 /* structure */
 .name-container {
-
+    height: 50%;
+    width: 100%;
 }
 
 /* skin */
 .name-container {
-
+    
 }
 
+/* Structure */
+.last-seen-container {
+    height: 50%;
+    width: 100%;
+}
+
+/* Skin */
+.last-seen-container {
+    font-size: .5rem;
+}
     /* Screen header right */
+
+/* Shared */
+.phone-icon, .paper-clip-icon, .drop-down-icon {
+    width: 33%;
+    height: 100%;
+}
 
 /* structure */
 .phone-icon {
-
+    
 }
 
 /* skin */
