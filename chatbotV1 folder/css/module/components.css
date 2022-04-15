@@ -26,7 +26,7 @@ in the globals file */
     cursor: pointer;
 }
 
-    /* Screen */
+    /* Screen header shared */
 
 /* Shared width between each screen component */
 .screen-header, .screen-body, .screen-bottom {
@@ -69,7 +69,7 @@ in the globals file */
 
 /* Skin */
 .screen-header-left {
-    color: white;
+    
 }
 
     /* Center of the screen header*/
@@ -111,7 +111,38 @@ in the globals file */
 
 /* Skin for Screen body */
 .screen-body {
+    background-color:  #D5F3FE;
+}
+
+    /* Messages */
+
+.chat-bot-msg, .user-msg {
+    display: flex;
+    height: 5vh;
+    background-color: aquamarine;
+    margin: 8px;
+    border: .5px solid black;
+    width: 50%;
+}
+
+/* Structure */
+.chat-bot-msg {
+    float: left;
+}
+
+/* Skin */
+.chat-bot-msg {
     background-color: white;
+}
+
+/* Structure */
+.user-msg {
+    float: right;
+}
+
+/* Structure */
+.user-msg {
+    background-color: #25D366;
 }
 
     /* ------------------------------------------------------------- */

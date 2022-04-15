@@ -8,7 +8,7 @@
     left: 0;
 }
 
-    /* Screen header left */
+    /* Screen header left*/
 
 /* Structure for arrow icon */
 .arrow-left {
@@ -91,5 +91,27 @@
 
 /* skin */
 .drop-down-icon {
+
+}
+
+/* ------------------------------------------------- */
+/* Body */
+
+/* structure */
+.msg-text {
+
+}
+
+/* skin */
+.msg-text {
+
+}
+/* structure */
+.msg-time{
+
+}
+
+/* skin */
+.msg-time{
 
 }
