@@ -7,14 +7,19 @@
 :root {
     --wallpaper: #3457D5;
     --clickable: #A3C1AD;
+    --whatsapp-dark: #075E54;
 }
 
-/* Button link with full dynamic size of container */
-.btn-link {
-    position: absolute;
-    float: left;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+/* To style the layout of the modules on the page
+thereby creating a template */
+
+/* Structure */
+.page-container {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Skin */
+.page-container {
+    background-color: var(--wallpaper);
 }

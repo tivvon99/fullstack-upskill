@@ -23,6 +23,8 @@ in the globals file */
     cursor: pointer;
 }
 
+/* chat-bot.html */
+
 /* Structure for screen container */
 .screen-container {
     height: 80vh;
@@ -35,4 +37,44 @@ in the globals file */
 .screen-container {
     background-color: var(--clickable);
     border: .5rem solid black;
+}
+
+/* Shared width between each screen component */
+.screen-header, .screen-body, .screen-bottom {
+    width: 100%;
+}
+
+/* Shared height of header and bottom */
+.screen-header, .screen-bottom {
+    height: 10vh;
+}
+
+/* Structure for Screen header */
+.screen-header {
+
+}
+
+/* Skin for Screen header */
+.screen-header {
+    background-color: var(--whatsapp-dark);
+}
+
+/* Structure for Screen body */
+.screen-body {
+    height: 60vh;
+}
+
+/* Skin for Screen body */
+.screen-body {
+    background-color: white;
+}
+
+/* Structure for Screen bottom */
+.screen-bottom {
+
+}
+
+/* Skin for Screen bottom */
+.screen-bottom {
+    background-color: blue;
 }
