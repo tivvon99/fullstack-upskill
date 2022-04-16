@@ -54,3 +54,13 @@
     background-color: var(--clickable);
     border: .5rem solid black;
 }
+
+
+
+
+/* States, might have to go in another CSS file */
+.emoji-button-icon:hover, .camera-container:hover, .arrow-left:hover, .phone-icon:hover, .paper-clip-icon:hover, .drop-down-icon:hover,
+.screen-bottom-right:hover {
+    color: purple;
+    cursor: pointer;
+}

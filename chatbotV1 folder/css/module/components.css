@@ -20,11 +20,6 @@ in the globals file */
     color: var(--whatsapp-dark);
 }
 
-/* State */
-.enter-btn:hover {
-    background-color: aliceblue;
-    cursor: pointer;
-}
 
     /* Screen header shared */
 
@@ -166,18 +161,21 @@ in the globals file */
 
 /* Structure */
 .screen-bottom-left {
-width: 90%;
+width: 80%;
+height: 80%;
+margin: 1vh 2vh;
 display: flex;
 }
 
 /* Skin */
 .screen-bottom-left {
     color: darkgrey;
+    background-color: white;
 }
 
 /* Structure */
 .screen-bottom-right {
-    width: 10%;
+    width: 20%;
     display: flex;
 }
 
@@ -185,5 +183,6 @@ display: flex;
 .screen-bottom-right {
     font-size: 3rem;
     color: var(--whatsapp-dark);
-    align-items: center;
+    justify-content: center;
+    padding-top: 2vh;
 }

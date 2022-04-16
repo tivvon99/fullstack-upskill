@@ -10,35 +10,44 @@
 
     /* Screen header left*/
 
-/* Structure for arrow icon */
+/* Arrow */
+
+/* Structure */
 .arrow-left {
     width: 30%;
     height: 100%;
 }
 
-/* Skin for arrow image pic */
+/* Skin */
 .arrow-left {
     font-size: 1rem;
     color: white;
 }
 
-/* Structure for profile pic div */
+/* profile picture */
+
+/* Structure */
 .profile-pic {     
     width: 70%;
     height: 100%;
 }
 
-/* Skin for profile pic div */
+/* Skin */
 .profile-pic {
     font-size: 2.5rem;
 }
 
     /* Screen header middle */
 
-/* structure */
-.name-container {
+/* shared */
+.name-container, .last-seen-container {
     height: 50%;
     width: 100%;
+}
+
+/* structure */
+.name-container {
+    
 }
 
 /* skin */
@@ -48,13 +57,13 @@
 
 /* Structure */
 .last-seen-container {
-    height: 50%;
-    width: 100%;
+    
 }
 
 /* Skin */
 .last-seen-container {
-    font-size: .5rem;
+    font-size: .8rem;
+    opacity: 70%;
 }
     /* Screen header right */
 
