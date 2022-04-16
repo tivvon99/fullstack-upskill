@@ -50,16 +50,35 @@
                 </span>
             </div>
             <div class="screen-body">
-                <span class="chat-bot-msg">
-                    <span class="msg-text"><p>Hello Loretta Fleming</p></span>
-                    <span class="msg-time"><p>12:00 AM</p></span>
-                </span>
+                <div class="chat-bot-msg">
+                    <div class="msg-text"><p>Hello Loretta Fleming</p>
+                        <div class="msg-time"><p>12:00 AM</p></div>
+                    </div>
+                </div>
                 <div class="user-msg">
-                    <span class="msg-text"><p>Hi Nina Riley, how r u?</p></span>
-                    <span class="msg-time"><p>12:00 AM</p></span>
+                    <div class="msg-text"><p>Hi Nina Riley, how r u?</p>
+                        <div class="msg-time"><p>12:00 AM</p></div>
+                    </div>
                 </div>
             </div>
+            <!-- At the bottom of the screen needs to be 2 divs. One large div that includes an emoji keyboard, a message input, and a camera button, and another that is a microphone icon/button  -->
             <div class="screen-bottom">
+                <div class="screen-bottom-left">
+                    <div class="emoji-button-icon">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+                    <div class="send-msg-container">
+                        <form action="">
+                            <label for="user-input"></label>
+                            <input type="text" id="user-input" name="user-input">
+                        </form>
+                    </div>
+                    <div class="camera-container">
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                </div>
+                <div class="screen-bottom-right"><i class="fa-solid fa-microphone"></i>
+                </div>
             </div>
         </div>
     </div>
